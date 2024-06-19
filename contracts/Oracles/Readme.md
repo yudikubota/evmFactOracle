@@ -1,14 +1,15 @@
-Oracle Query Contracts Documentation
-Introduction
+# Oracle Query Contracts Documentation
+
+## Introduction
 These oracle query contracts provide interfaces to access various data feeds stored on the blockchain. The contracts facilitate querying data by different license types and subscription models.
 
-PayPerUseOracle
-Description
+## PayPerUseOracle
+
 PayPerUseOracle allows users to query data feeds by paying a fee per usage. Users can request data by calling functions and providing the required parameters along with payment.
 
-Interface
+### Interface
 
-
+```solidity
 contract PayPerUseOracle {
     function checkPrice(uint32 _feedId) public view returns (uint256);
     function getValue(uint32 _feedId) public payable;
@@ -19,9 +20,11 @@ contract PayPerUseOracle {
     function verify(IntDataItem calldata _dataFeed) public payable;
     function verifyPack(PackDataItem calldata _dataFeed) public payable;
 }
-Example Usage
+```
 
+### Example Usage
 
+```solidity
 // Example usage of PayPerUseOracle contract
 contract ExamplePayPerUse {
     PayPerUseOracle public oracle;
@@ -41,14 +44,15 @@ contract ExamplePayPerUse {
         oracle.getValue{value: price}(_feedId);
     }
 }
+```
 
+## OpenOracle
 
-OpenOracle
-Description
 OpenOracle allows users to query data feeds without requiring a subscription. Users can access data feeds by calling functions directly.
 
-Interface
+### Interface
 
+```solidity
 contract OpenOracle {
     function isFeedAvailable(uint32 _feedId) public view returns (bool);
     function getValue(uint32 _feedId) public view returns (int256);
@@ -58,9 +62,11 @@ contract OpenOracle {
     function verify(IntDataItem calldata _dataFeed) public view returns (bool);
     function verifyPack(PackDataItem calldata _dataFeed) public view returns (bool);
 }
-Example Usage
+```solidity
 
+### Example Usage
 
+```solidity
 // Example usage of OpenOracle contract
 contract ExampleOpenOracle {
     OpenOracle public oracle;
@@ -78,13 +84,15 @@ contract ExampleOpenOracle {
         // Process data...
     }
 }
-SubscriptionOracle
-Description
+```
+
+## SubscriptionOracle
+
 SubscriptionOracle allows users to subscribe to data feeds by paying a subscription fee. Subscribers gain access to data feeds for a specified period after subscribing.
 
-Interface
+### Interface
 
-
+```solidity
 contract SubscriptionOracle {
     function checkPrice(uint32 _feedId) public view returns (uint256);
     function subscribe(address _address, uint32 _feedId) public payable;
@@ -96,8 +104,11 @@ contract SubscriptionOracle {
     function verify(IntDataItem calldata _dataFeed) public view returns (bool);
     function verifyPack(PackDataItem calldata _dataFeed) public view returns (bool);
 }
-Example Usage
+```
 
+### Example Usage
+
+```solidity
 // Example usage of SubscriptionOracle contract
 contract ExampleSubscriptionOracle {
     SubscriptionOracle public oracle;
@@ -121,4 +132,5 @@ contract ExampleSubscriptionOracle {
         // Process data...
     }
 }
+```
 Feel free to customize the documentation further to fit your specific use case or requirements.
