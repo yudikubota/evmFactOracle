@@ -212,11 +212,3 @@ Contributions are welcome! Please open an issue or submit a pull request for any
 For any questions or support, please contact us at support@fact.finance
 
 
-
-
-
-
-
-
-
-ChatGPT pode cometer erros. Considere verificar informações importantes.
