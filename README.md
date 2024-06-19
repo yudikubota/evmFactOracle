@@ -1,8 +1,8 @@
 # Fact Finance Oracle 
 
-At Fact Finance, we're reshaping Latin America's web3 infrastructure with tailored, reliable real-world data. By forging strategic partnerships and offering localized solutions, we empower businesses to navigate regional nuances confidently. Our commitment to education and sustainability ensures lasting impact and growth, driving tangible progress in the region's digital landscape. Join us in revolutionizing web3's future—one data point at a time.
+At Fact Finance, we're reshaping web3 infrastructure with tailored, reliable real-world data. By forging strategic partnerships with official data providers, including research institutes, sports leagues, and governmental data agencies, we empower businesses to confidently navigate regional nuances. Our commitment to education and sustainability ensures a lasting impact and growth, driving tangible progress in the digital landscape. Join us in revolutionizing web3’s future—one data point at a time.
 
-[Read more about the project] (https://respected-yard-256.notion.site/About-Fact-Finance-c2c2a72cdc914fd4b3094d71fe045437)
+[Read more about the project](https://respected-yard-256.notion.site/About-Fact-Finance-c2c2a72cdc914fd4b3094d71fe045437)
 
 ## Repository Structure 
 
@@ -16,7 +16,7 @@ This repository provides a comprehensive set of smart contracts for Fact Finance
 
 ## Overview of Contracts
 
-###Controller
+### Controller
 
 The `Controller` module manages roles and permissions within the system.
 
