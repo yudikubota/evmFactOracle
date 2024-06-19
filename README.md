@@ -1,9 +1,12 @@
-# Oracle Integration Project
+# Fact Finance Oracle 
 
-This project provides a comprehensive set of smart contracts for Fact Finance Oracle protocol. The repository is divided into several modules: controller, oracle, auditor, store, and helpers. Each module serves a specific purpose in the overall system.
+At Fact Finance, we're reshaping Latin America's web3 infrastructure with tailored, reliable real-world data. By forging strategic partnerships and offering localized solutions, we empower businesses to navigate regional nuances confidently. Our commitment to education and sustainability ensures lasting impact and growth, driving tangible progress in the region's digital landscape. Join us in revolutionizing web3's future—one data point at a time.
 
+[Read more about the project] (https://respected-yard-256.notion.site/About-Fact-Finance-c2c2a72cdc914fd4b3094d71fe045437)
 
-## Repository Structure
+## Repository Structure 
+
+This repository provides a comprehensive set of smart contracts for Fact Finance Oracle protocol. The repository is divided into several modules: controller, oracle, auditor, store, and helpers. Each module serves a specific purpose in the overall system.
 
 1. Controller: Manages access control and roles.
 2. Oracle: Includes different oracle contracts for accessing data feeds.
