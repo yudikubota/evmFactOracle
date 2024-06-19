@@ -133,4 +133,3 @@ contract ExampleSubscriptionOracle {
     }
 }
 ```
-Feel free to customize the documentation further to fit your specific use case or requirements.
