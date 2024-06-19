@@ -132,7 +132,7 @@ npx hardhat test
 
 ## Deploy
 
-To run deploy local, use the following command:
+To run deploy locally, use the following command:
 
 ```bash
  
