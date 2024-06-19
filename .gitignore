@@ -2,3 +2,5 @@ node_modules
 artifacts
 cache
 typechain-types
+*/.DS_Store
+.DS_Store
